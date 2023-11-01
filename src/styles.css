@@ -1,0 +1,107 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation + max document width for better reading */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  max-width: 80ch;
+  padding: 5em 1em;
+  margin: auto;
+  background-color: #f9f9f9;
+}
+
+body {
+  font-family: ui-rounded, "Hiragino Maru Gothic ProN", Quicksand, Comfortaa,
+    Manjari, "Arial Rounded MT", "Arial Rounded MT Bold", Calibri,
+    source-sans-pro, sans-serif;
+  font-weight: normal;
+  color: #222222;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: #ffa500;
+  text-decoration-color: #ffa500;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2ex;
+}
+
+summary {
+  cursor: pointer;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  padding: 0;
+}
+
+#hlavicka {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#avatar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 9999px;
+}
+
+small {
+  color: #888888;
+}
+
+hgroup p,
+h1 {
+  margin: 0 0 0.2rem 0;
+}
+
+.ikona-socky {
+  width: 1.25rem;
+  height: 1.25rem;
+  opacity: 0.75;
+}
+
+.ikona-socky:hover {
+  opacity: 1;
+}
+
+.repo {
+  padding: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+}
+
+#projekty {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  gap: 0.5rem;
+}
